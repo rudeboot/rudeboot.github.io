@@ -45,7 +45,31 @@ h1 p {
 	font-family: monoton;
 }
 
+.hide {
+	display: none; 
+}
 
+.fixed {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	height: 50px;
+	width: 50px;
+	border-radius: 50em;
+	background-color: rgb(253,228,216);
+
+}
+
+.arrow-thingy {
+	text-align: center;
+}
+.arrow-container {
+	height: 50px;
+	width:50px;
+	display: table-cell;
+	vertical-align: middle;
+	cursor: pointer;
+}
 
 .great-vibes
 {

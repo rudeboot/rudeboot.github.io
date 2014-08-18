@@ -2,22 +2,37 @@
 <head>
 	<meta charset="UTF-8">
 	<title>hbdk$</title>
+	<link rel="stylesheet" href="./animate.css">
+	<link rel="stylesheet" href="./fa/css/font-awesome.min.css">
 	<link rel="stylesheet" href="./styles.css">
 </head>
 <body>
+<div class="fixed arrow-thingy">
+	<div class="arrow-container">
+		<i class="fa fa-arrow-down"></i>
+	</div>
+</div>
 <section>
 	<h1 id="hbd">
-		<p class="monoton"> happy </p>
-		<p class="monoton"> fucking </p>
-		<p class="monoton"> birthday </p>
+		<p class="monoton hide"> happy </p>
+		<p class="monoton hide"> fucking </p>
+		<p class="monoton hide"> birthday </p>
 	<h1>
 </section>
-<section>
+<section id="explanation">
 	
 </section>
+	<script src="./jquery.js"></script>
 	<script src="./fittext.js"></script>
 	<script>
-	  window.fitText( document.getElementById("hbd"), .7 );
+	  window.fitText( $("#hbd"), .7 );
+	  var to_animate = $(".hide")
+	  to_animate.each(function(foo,bar) {
+	  	setTimeout(function() {
+	  		bar.className = "monoton animated bounceInLeft";
+	  	}, 400*(foo+1));
+	  });
+
 	</script>
 </body>
 </html>
