@@ -13,6 +13,11 @@
 	src: url(./fonts/ues/ues.ttf);
 }
 
+@font-face {
+	font-family: mb;
+	src: url(./fonts/mb/mb.otf);
+}
+
 body
 {
 	margin: 0;
@@ -47,6 +52,10 @@ body section
 	margin: 0 auto;
 	border-radius: 50em;
 	background: url(./kmoney.jpg) no-repeat center center;
+}
+
+.ilb {
+	display: inline-block;
 }
 
 h1 
@@ -116,8 +125,10 @@ h1 p {
 }
 
 .limerick {
-	display: none;
-	font-family: ;
+	font-family: mb;
+	margin-left: 1em;
+	font-size: 2.2em;
+	text-align: left;
 }
 
 .ues {

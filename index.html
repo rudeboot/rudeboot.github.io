@@ -16,18 +16,24 @@
 	<h1 id="hbd">
 		<p class="monoton hide"> happy </p>
 		<p class="monoton hide"> fucking </p>
-		<p class="monoton hide"> birthday </p>
+		<p class="monoton hide"> birthday! </p>
 	<h1>
 </section>
 <section id="explanation" class="ues">
 	<div class="center-me">
-		<div class="cont" id="ex1">do these colors seem strange?</div>
-		<p id="ex2"> be sure to ask about them. </p>
-		<button id="foto">(click here for a hint-limerick)</button>
+		<div class="cont" id="ex1">does my color choice seem strange?</div>
+		<p id="ex2"> be sure to ask about it sometimes. </p>
+		<button id="foto">(anyhoo, click here for a hint-limerick)</button>
 		<div class="hint-cont">
-			<div class="kmoney"></div>
-			<div class="limerick">
-				
+			<div class="ilb kmoney"></div>
+			<div class="ilb limerick">
+				<p id="ex3"> 
+					it comes from the depths of the sea <br>
+					and its hearts are so numerous-- it has three! <br>
+					beneath your <i>working</i> fingers <br>
+					is where your next little-gift lingers <br>
+					and when you retrieve it... well, you'll look quite silly (sorry)
+				</p>
 			</div>
 		</div>
 	</div>
@@ -36,9 +42,10 @@
 	<script src="./fittext.js"></script>
 	<script>
 	window.fitText( $("#hbd"), .7 );
-	window.fitText( $("#ex1"), 1.4 );
-	window.fitText( $("#ex2"), 1.7 );
-	  var to_animate = $(".hide")
+	window.fitText( $("#ex1"), 1.6 );
+	window.fitText( $("#ex2"), 1.9 );
+
+	  var to_animate = $(".hide");
 	  to_animate.each(function(foo,bar) {
 	  	setTimeout(function() {
 	  		bar.className = "monoton animated bounceInLeft";
