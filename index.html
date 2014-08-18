@@ -19,16 +19,25 @@
 		<p class="monoton hide"> birthday </p>
 	<h1>
 </section>
-<section id="explanation">
+<section id="explanation" class="ues">
 	<div class="center-me">
-		<div class="cont" id="ex">Do these colors seem strange?</div>
+		<div class="cont" id="ex1">do these colors seem strange?</div>
+		<p id="ex2"> be sure to ask about them. </p>
+		<button id="foto">(click here for a hint-limerick)</button>
+		<div class="hint-cont">
+			<div class="kmoney"></div>
+			<div class="limerick">
+				
+			</div>
+		</div>
 	</div>
 </section>
 	<script src="./jquery.js"></script>
 	<script src="./fittext.js"></script>
 	<script>
 	window.fitText( $("#hbd"), .7 );
-	window.fitText( $("#ex"), 1.1 );
+	window.fitText( $("#ex1"), 1.4 );
+	window.fitText( $("#ex2"), 1.7 );
 	  var to_animate = $(".hide")
 	  to_animate.each(function(foo,bar) {
 	  	setTimeout(function() {
@@ -41,6 +50,9 @@
 	  	    'slow');
 	  	$('.arrow-thingy').addClass("animated bounceOut");
 
+	  })
+	  $("#foto").click(function() {
+	  	$(".hint-cont").show(800);
 	  })
 	</script>
 </body>

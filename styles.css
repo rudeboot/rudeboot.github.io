@@ -8,6 +8,11 @@
 	src: url(./fonts/monoton/monoton.ttf);
 }
 
+@font-face {
+	font-family: ues;
+	src: url(./fonts/ues/ues.ttf);
+}
+
 body
 {
 	margin: 0;
@@ -34,6 +39,14 @@ body section
 .center-me .cont {
 	padding-top: 50px;
 	color: rgb(9, 19, 4);
+}
+
+.kmoney {
+	height: 100px;
+	width: 100px;
+	margin: 0 auto;
+	border-radius: 50em;
+	background: url(./kmoney.jpg) no-repeat center center;
 }
 
 h1 
@@ -75,6 +88,10 @@ h1 p {
 
 }
 
+.hint-cont {
+	display: none;
+}
+
 .arrow-thingy {
 	text-align: center;
 	cursor: pointer;
@@ -84,6 +101,27 @@ h1 p {
 	width:50px;
 	display: table-cell;
 	vertical-align: middle;
+}
+
+#foto {
+	padding: 8px;
+	margin: 10px 0;
+	background: rgb(10,20,6);
+	font-size: 1.1em;
+	border: none;
+	color: rgb(203, 182, 171);
+	cursor: pointer;
+	outline: none;
+	border-radius: 5px;
+}
+
+.limerick {
+	display: none;
+	font-family: ;
+}
+
+.ues {
+	font-family: ues;
 }
 
 .great-vibes
