@@ -20,19 +20,28 @@
 	<h1>
 </section>
 <section id="explanation">
-	
+	<div class="center-me">
+		<div class="cont" id="ex">Do these colors seem strange?</div>
+	</div>
 </section>
 	<script src="./jquery.js"></script>
 	<script src="./fittext.js"></script>
 	<script>
-	  window.fitText( $("#hbd"), .7 );
+	window.fitText( $("#hbd"), .7 );
+	window.fitText( $("#ex"), 1.1 );
 	  var to_animate = $(".hide")
 	  to_animate.each(function(foo,bar) {
 	  	setTimeout(function() {
 	  		bar.className = "monoton animated bounceInLeft";
 	  	}, 400*(foo+1));
 	  });
+	  $(".arrow-thingy").click(function() {
+	  	$('html,body').animate({
+	  	    scrollTop: $("#explanation").offset().top},
+	  	    'slow');
+	  	$('.arrow-thingy').addClass("animated bounceOut");
 
+	  })
 	</script>
 </body>
 </html>

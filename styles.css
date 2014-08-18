@@ -21,6 +21,21 @@ body section
 	width: 100%;
 }
 
+#explanation {
+	background-color: rgb(246,215,210);
+}
+
+.center-me {
+	width: 85%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.center-me .cont {
+	padding-top: 50px;
+	color: rgb(9, 19, 4);
+}
+
 h1 
 {
 	text-align: center;
@@ -62,13 +77,13 @@ h1 p {
 
 .arrow-thingy {
 	text-align: center;
+	cursor: pointer;
 }
 .arrow-container {
 	height: 50px;
 	width:50px;
 	display: table-cell;
 	vertical-align: middle;
-	cursor: pointer;
 }
 
 .great-vibes
