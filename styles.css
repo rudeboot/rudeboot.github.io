@@ -99,6 +99,8 @@ h1 p {
 
 .hint-cont {
 	display: none;
+	border-radius:6em;
+	background: rgb(255,250,249);
 }
 
 .arrow-thingy {
@@ -134,7 +136,9 @@ h1 p {
 .ues {
 	font-family: ues;
 }
-
+.mb {
+	font-family: mb;
+}
 .great-vibes
 {
 	font-family: great-vibes;
