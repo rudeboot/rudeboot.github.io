@@ -1,0 +1,69 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>hbdk$</title>
+	<link rel="stylesheet" href="./animate.css">
+	<link rel="stylesheet" href="./fa/css/font-awesome.min.css">
+	<link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+<div class="fixed arrow-thingy">
+	<div class="arrow-container">
+		<i class="fa fa-arrow-down"></i>
+	</div>
+</div>
+<section>
+	<h1 id="hbd">
+		<p class="monoton hide"> happy </p>
+		<p class="monoton hide"> fucking </p>
+		<p class="monoton hide"> birthday! </p>
+	<h1>
+</section>
+<section id="explanation" class="ues">
+	<div class="center-me">
+		<div class="cont" id="ex1">does my color choice seem strange?</div>
+		<p id="ex2"> be sure to ask about it sometime. </p>
+		<button id="foto">(anyhoo, click here for a hint-limerick)</button>
+		<div class="hint-cont">
+			<div class="ilb">
+				<div class="kmoney"></div>
+				<div class="mb"><i class="fa fa-heart"></i>the internets</div>
+			</div>
+			<div class="ilb limerick">
+				<p id="ex3"> 
+					it comes from the depths of the sea <br>
+					and its hearts are so numerous-- it has three! <br>
+					beneath your <i>working</i> fingers <br>
+					is where your next little-gift lingers <br>
+					and when you retrieve it... well, you'll look quite silly
+				</p>
+			</div>
+		</div>
+	</div>
+</section>
+	<script src="./jquery.js"></script>
+	<script src="./fittext.js"></script>
+	<script>
+	window.fitText( $("#hbd"), .7 );
+	window.fitText( $("#ex1"), 1.6 );
+	window.fitText( $("#ex2"), 1.9 );
+
+	  var to_animate = $(".hide");
+	  to_animate.each(function(foo,bar) {
+	  	setTimeout(function() {
+	  		bar.className = "monoton animated bounceInLeft";
+	  	}, 400*(foo+1));
+	  });
+	  $(".arrow-thingy").click(function() {
+	  	$('html,body').animate({
+	  	    scrollTop: $("#explanation").offset().top},
+	  	    'slow');
+	  	$('.arrow-thingy').addClass("animated bounceOut");
+
+	  })
+	  $("#foto").click(function() {
+	  	$(".hint-cont").show(800);
+	  })
+	</script>
+</body>
+</html>
